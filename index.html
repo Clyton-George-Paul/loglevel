@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +41,26 @@
         .cta:hover {
             background-color: #45a049;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            background-color: white;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item p {
+            padding: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -50,6 +70,21 @@
     <main>
         <p>We offer handmade, high-quality products crafted with love and care. Explore our unique collection and find something special for yourself or your loved ones.</p>
         <a href="#contact" class="cta">Contact Us</a>
+        
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="product1.jpg" alt="Product 1">
+                <p>Handmade Basket</p>
+            </div>
+            <div class="gallery-item">
+                <img src="product2.jpg" alt="Product 2">
+                <p>Decorative Candle</p>
+            </div>
+            <div class="gallery-item">
+                <img src="product3.jpg" alt="Product 3">
+                <p>Knitted Scarf</p>
+            </div>
+        </section>
     </main>
     <footer id="contact">
         <p>Contact us: mycottage@example.com | Phone: (123) 456-7890</p>
